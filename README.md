@@ -33,15 +33,6 @@ cd latency-check/LatencyChecker
 podman build -t latency-checker .
 ```
 
-### Using bego
-```bash
-# Navigate to the project directory
-cd latency-check/LatencyChecker
-
-# Build with bego
-export DOCKER_BUILDKIT=1
-bego build -v latest
-```
 
 ## Usage
 
@@ -163,7 +154,7 @@ podman run --rm latency-checker https://problematic-site.com 100
 
 ## Requirements
 
-- Docker, Podman, or bego for building/running
+- Docker, Podman for building/running
 - Network connectivity to target URLs
 - Supports both HTTP and HTTPS URLs
 
@@ -181,9 +172,6 @@ podman run --rm latency-checker https://problematic-site.com 100
 # Ensure BuildKit is enabled for Docker
 export DOCKER_BUILDKIT=1
 
-# For permission issues with bego
-sudo mv /tmp/bego /usr/local/bin/bego
-```
 
 ### Runtime Issues
 ```bash
