@@ -26,17 +26,6 @@ pipeline:
                     command: echo hello world
                   timeout: ""
                   type: Run
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: hello/world
-                    tags:
-                      - latest
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             arch: Arm64
             os: MacOS
