@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Ghoshaya1_LatencyCheck_1757944887704-push-trigger-input-set
+  identifier: Build_Ghoshaya1_LatencyCheck_1757944887704pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default
+  pipeline:
+    identifier: Build_Ghoshaya1_LatencyCheck_1757944887704
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
