@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Ghoshaya1_LatencyCheck_1757944887704-pr-trigger-input-set
+  identifier: Build_Ghoshaya1_LatencyCheck_1757944887704prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default
+  pipeline:
+    identifier: Build_Ghoshaya1_LatencyCheck_1757944887704
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
